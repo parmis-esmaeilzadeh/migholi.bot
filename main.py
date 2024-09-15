@@ -2,6 +2,8 @@ import telebot
 from config import API_TOKEN
 from telebot.types import InlineKeyboardButton, InlineKeyboardMarkup
 import sqlite3
+from keep_alive import keep_alive
+keep_alive()
 
 bot = telebot.TeleBot(API_TOKEN)
 
